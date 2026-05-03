@@ -1,0 +1,2 @@
+@odata.context,value
+https://graph.microsoft.com/v1.0/$metadata#users,"{'businessPhones': [], 'displayName': 'ABDUL BASITH SHAIK', 'givenName': 'ABDUL BASITH', 'jobTitle': None, 'mail': None, 'mobilePhone': None, 'officeLocation': None, 'preferredLanguage': 'en', 'surname': 'SHAIK', 'userPrincipalName': 'abdulbasithshaik.dev_outlook.com#EXT#@abdulbasithshaikdevoutlook.onmicrosoft.com', 'id': '736652a5-73e4-47b7-9993-28791a32ddd6'}"

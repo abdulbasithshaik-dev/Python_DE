@@ -1,6 +1,7 @@
 import requests
 from dotenv import load_dotenv
 import os
+import pandas as pd
 load_dotenv()
 tenant_id=os.getenv("TENANT_ID")
 client_id=os.getenv("CLIENT_ID")
@@ -34,8 +35,14 @@ def call_graph_api():
             print(F"Api Error:{data.status_code}")
     except Exception as e:
         print("Something failed:", str(e))
+    return data.json()
+
+def create_csv():
+    api_data=call_graph_api()
+    df=pd.DataFrame(api_data)
+    df.to_csv("graph_excel.csv",index=False)
+    print("csv created")
 
 
-
-call_graph_api()
+create_csv()
 
